@@ -1,0 +1,374 @@
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: clamp(28px, 4vw, 56px);
+  align-items: center;
+  padding-top: 26px;
+}
+
+.content {
+  display: grid;
+  gap: 18px;
+}
+
+.kicker {
+  color: var(--text-soft);
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+.title {
+  /* max-width: 12ch; */
+  font-size: 72px;
+  line-height: 0.92;
+}
+
+.description {
+  color: var(--text-soft);
+  font-size: 1.04rem;
+  line-height: 1.8;
+}
+
+.description strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.offerCard {
+  display: grid;
+  gap: 18px;
+  max-width: 530px;
+  padding: 22px;
+  border: 1px solid rgba(112, 86, 66, 0.12);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 18px 42px rgba(87, 62, 44, 0.1);
+  backdrop-filter: blur(18px);
+}
+
+.offerTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.oldPrice {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: var(--text-faint);
+  font-size: 0.9rem;
+  text-decoration: line-through;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.price {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 0.95;
+  color: var(--accent);
+}
+
+.currency {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.timer {
+  min-width: 250px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: var(--bg-soft);
+  border: 1px solid rgba(112, 86, 66, 0.1);
+}
+
+.timerLabel {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--text-faint);
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.timerValues {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.timerValues div {
+  display: grid;
+  gap: 3px;
+}
+
+.timerValues strong {
+  font-size: 1.9rem;
+  line-height: 1;
+}
+
+.timerValues span {
+  color: var(--text-faint);
+  font-size: 0.8rem;
+}
+
+.visual {
+  position: relative;
+  min-height: 580px;
+}
+
+.visualFrame {
+  position: relative;
+  height: 100%;
+  min-height: inherit;
+  border-radius: 44px;
+  background:
+    radial-gradient(circle at 68% 34%, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.2) 42%, transparent 55%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(243, 236, 228, 0.72));
+  border: 1px solid rgba(255, 255, 255, 0.84);
+  box-shadow: 0 34px 80px rgba(87, 62, 44, 0.12);
+  overflow: hidden;
+}
+
+.visualGlow {
+  position: absolute;
+  inset: 12% 10% auto auto;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(233, 219, 205, 0.85), transparent 70%);
+  filter: blur(10px);
+}
+
+.device {
+  position: absolute;
+  border-radius: 24px;
+  background: linear-gradient(145deg, #24201d, #0e0d0c 72%);
+  box-shadow: 0 34px 56px rgba(24, 17, 13, 0.26);
+}
+
+.deviceLaptop {
+  left: 12%;
+  bottom: 10%;
+  width: min(520px, 76%);
+  aspect-ratio: 1.28;
+  padding: 14px 14px 18px;
+  transform: rotate(-8deg);
+}
+
+.deviceLaptop::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -16px;
+  width: 120%;
+  height: 16px;
+  border-radius: 0 0 24px 24px;
+  background: linear-gradient(180deg, #c3bbb4, #91877f);
+  transform: translateX(-50%);
+}
+
+.deviceScreen,
+.phoneScreen {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 14px;
+  height: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fdfcfa, #f2ece4);
+}
+
+.sidebar {
+  border-radius: 12px;
+  background: linear-gradient(180deg, #121211, #1f1f1d);
+}
+
+.screenContent {
+  display: grid;
+  gap: 12px;
+  align-content: start;
+  padding-top: 12px;
+}
+
+.screenContent span,
+.phoneScreen span {
+  height: 14px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(207, 191, 177, 0.95), rgba(240, 234, 228, 0.95));
+}
+
+.screenContent span:nth-child(1) {
+  width: 68%;
+}
+
+.screenContent span:nth-child(2) {
+  width: 84%;
+}
+
+.screenContent span:nth-child(3) {
+  width: 76%;
+}
+
+.screenContent span:nth-child(4) {
+  width: 92%;
+}
+
+.screenContent span:nth-child(5) {
+  width: 58%;
+}
+
+.devicePhone {
+  position: absolute;
+  right: 16%;
+  bottom: 12%;
+  width: min(168px, 28%);
+  aspect-ratio: 0.5;
+  padding: 10px;
+  border-radius: 30px;
+  background: linear-gradient(160deg, #23201d, #080808 70%);
+  box-shadow: 0 22px 40px rgba(21, 15, 11, 0.24);
+  transform: rotate(3deg);
+}
+
+.phoneScreen {
+  grid-template-columns: 1fr;
+  gap: 12px;
+  align-content: start;
+  padding-top: 38px;
+}
+
+.phoneScreen span:nth-child(1) {
+  width: 84%;
+}
+
+.phoneScreen span:nth-child(2) {
+  width: 92%;
+}
+
+.phoneScreen span:nth-child(3) {
+  width: 76%;
+}
+
+.phoneScreen span:nth-child(4) {
+  width: 68%;
+}
+
+.decorStem {
+  position: absolute;
+  right: 7%;
+  bottom: 8%;
+  width: 110px;
+  height: 300px;
+  opacity: 0.46;
+  background:
+    radial-gradient(circle at 54% 14%, rgba(215, 193, 173, 0.84), transparent 20%),
+    radial-gradient(circle at 42% 34%, rgba(215, 193, 173, 0.74), transparent 22%),
+    radial-gradient(circle at 66% 32%, rgba(215, 193, 173, 0.72), transparent 18%),
+    linear-gradient(180deg, transparent 0 12%, rgba(177, 152, 127, 0.85) 12% 100%);
+  clip-path: polygon(49% 0, 55% 0, 56% 76%, 100% 24%, 100% 32%, 60% 82%, 62% 100%, 50% 100%, 48% 84%, 0 38%, 0 28%, 44% 76%);
+}
+
+@media (max-width: 1100px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    max-width: 620px;
+  }
+
+  .visual {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 780px) {
+  .hero {
+    gap: 26px;
+    padding-top: 12px;
+  }
+
+  .offerTop {
+    flex-direction: column;
+  }
+
+  .timer {
+    min-width: 100%;
+  }
+
+  .visual {
+    min-height: 360px;
+  }
+
+  .deviceLaptop {
+    left: 8%;
+    width: 76%;
+  }
+
+  .devicePhone {
+    right: 10%;
+    width: 24%;
+  }
+}
+
+@media (max-width: 520px) {
+  .title {
+    max-width: 11ch;
+    font-size: clamp(2.7rem, 14vw, 4rem);
+  }
+
+  .description {
+    font-size: 0.98rem;
+  }
+
+  .offerCard {
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .visual {
+    min-height: 280px;
+  }
+
+  .visualFrame {
+    border-radius: 30px;
+  }
+
+  .deviceLaptop {
+    bottom: 12%;
+    padding: 10px 10px 14px;
+  }
+
+  .deviceLaptop::after {
+    bottom: -12px;
+    height: 12px;
+  }
+
+  .deviceScreen,
+  .phoneScreen {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .deviceScreen {
+    grid-template-columns: 56px 1fr;
+  }
+
+  .devicePhone {
+    width: 26%;
+    border-radius: 20px;
+  }
+
+  .timerValues {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 18px;
+  }
+}
