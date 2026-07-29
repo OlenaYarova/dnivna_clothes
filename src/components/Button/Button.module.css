@@ -3,10 +3,12 @@
   align-items: center;
   justify-content: center;
   gap: 12px;
+  width: min(100%, 420px);
   min-height: 56px;
   padding: 16px 24px;
   border: 1px solid transparent;
   border-radius: var(--radius-pill);
+  justify-self: center;
   transition:
     transform var(--transition),
     background-color var(--transition),

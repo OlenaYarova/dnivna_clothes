@@ -29,7 +29,7 @@
 .feature {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
   min-height: 70px;
   padding: 14px 16px;
   border: 1px solid rgba(105, 82, 66, 0.1);

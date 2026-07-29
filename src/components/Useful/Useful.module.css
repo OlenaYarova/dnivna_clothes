@@ -47,10 +47,9 @@
 }
 
 .button {
-  width: fit-content;
-  min-width: 500px;
+  width: min(100%, 420px);
   padding-inline: 28px;
-  margin-left: 330px;
+  justify-self: center;
 }
 
 .visual {

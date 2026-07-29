@@ -12,7 +12,7 @@
 
 .photoCard {
   position: relative;
-  min-height: 430px;
+  min-height: 100%;
   border: 1px solid rgba(255, 255, 255, 0.84);
   border-radius: 18px;
   background:
@@ -207,9 +207,9 @@
     grid-template-columns: 1fr;
   }
 
-  .photoCard {
+  /* .photoCard {
     min-height: 380px;
-  }
+  } */
 
   .reasons {
     grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -1,10 +1,15 @@
+import { PiCoatHanger } from "react-icons/pi";
 import Button from "../Button/Button.tsx";
 import styles from "./More_that.module.css";
+
+function HangerIcon() {
+    return <PiCoatHanger aria-hidden="true" className={styles.reactIcon} />;
+}
 
 const items = [
     {
         title: "Зручна навігація",
-        text: "Все розкладено по категоріях для швидкого пошуку",
+        text: "Усе розкладено по категоріях для швидкого пошуку",
         icon: FolderIcon,
     },
     {
@@ -19,7 +24,7 @@ const items = [
     },
     {
         title: "Прямі контакти",
-        text: "Ніяких посередників — тільки перевірені прямі контакти постачальників",
+        text: "Без посередників — лише перевірені прямі контакти постачальників",
         icon: SendIcon,
     },
 ];
@@ -29,15 +34,6 @@ function FolderIcon() {
         <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M3.5 7.5h5l1.6 2H20.5v8.8a1.7 1.7 0 0 1-1.7 1.7H5.2a1.7 1.7 0 0 1-1.7-1.7V7.5Z" />
             <path d="M3.5 9.5V6.8A1.8 1.8 0 0 1 5.3 5h4l1.6 2h7.8a1.8 1.8 0 0 1 1.8 1.8v.7" />
-        </svg>
-    );
-}
-
-function HangerIcon() {
-    return (
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 6.2a2.1 2.1 0 1 1 2.2 2.1c-1 0-1.8.7-1.8 1.7v1" />
-            <path d="M12.4 11.2 18.7 15a1.2 1.2 0 0 1-.6 2.2H5.9a1.2 1.2 0 0 1-.6-2.2l6.3-3.8a.9.9 0 0 1 .8 0Z" />
         </svg>
     );
 }
@@ -63,6 +59,7 @@ function SendIcon() {
 export default function MoreThat() {
     return (
         <section className={`${styles.moreThat} section`} aria-labelledby="more-that-title">
+
             <h2 id="more-that-title" className={styles.title}>
                 Це більше, ніж база контактів
             </h2>
