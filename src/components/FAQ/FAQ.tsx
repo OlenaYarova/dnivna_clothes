@@ -1,22 +1,23 @@
 import Button from "../Button/Button.tsx";
+import { PAYMENT_URL } from "../../constants/payment.ts";
 import styles from "./FAQ.module.css";
 
 const questions = [
     {
         question: "Це навчання або курс?",
-        answer: "Це збірка бази постачальників.",
+        answer: "Ні, це готова база постачальників, зібрана в одному місці.",
     },
     {
-        question: "Чи є підтримка?",
-        answer: "Так, ми надаємо підтримку користувачам.",
+        question: "Чи є підтримкаа?",
+        answer: "Ні. Продукт продається у форматі готової бази.",
     },
     {
-        question: "Як я отримаю доступ?",
-        answer: "пупупу",
+        question: "Як отримати доступ?",
+        answer: "Після оплати ви отримуєте посилання на Telegram- канал",
     },
     {
         question: "Чи можна передавати базу іншим?",
-        answer: "Ні",
+        answer: "Ні, доступ призначений лише для особистого користування.",
     },
 ];
 
@@ -24,7 +25,6 @@ export default function FAQ() {
     return (
         <section className={`${styles.faq} section`} aria-labelledby="faq-title">
             <div className={styles.heading}>
-
                 <h2 id="faq-title" className={styles.title}>
                     FAQ
                 </h2>
@@ -39,7 +39,9 @@ export default function FAQ() {
                 ))}
             </div>
 
-            <Button className={styles.button}>Отримати доступ</Button>
+            <Button className={styles.button} href={PAYMENT_URL}>
+                Отримати доступ
+            </Button>
         </section>
     );
 }

@@ -1,4 +1,5 @@
 import Button from "../Button/Button.tsx";
+import { PAYMENT_URL } from "../../constants/payment.ts";
 import styles from "./Useful.module.css";
 
 const usefulItems = [
@@ -63,7 +64,9 @@ export default function Useful() {
                     ))}
                 </ul>
 
-                <Button className={styles.button}>Отримати доступ</Button>
+                <Button className={styles.button} href={PAYMENT_URL}>
+                    Отримати доступ
+                </Button>
             </div>
 
             <div className={styles.visual}>

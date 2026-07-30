@@ -25,7 +25,6 @@ export default function ForWhom() {
     return (
         <section className={`${styles.forWhom} section`} aria-labelledby="for-whom-title">
             <div className={styles.heading}>
-
                 <h2 id="for-whom-title" className={styles.title}>
                     Для кого ця база?
                 </h2>

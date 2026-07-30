@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Button from "../Button/Button.tsx";
+import { PAYMENT_URL } from "../../constants/payment.ts";
 import styles from "./Hero.module.css";
-
 const START_DAYS = 30;
 const START_HOURS = 24;
 const SECOND_MS = 1000;
@@ -84,7 +84,7 @@ export default function Hero() {
                         </div>
                     </div>
 
-                    <Button>Отримати доступ</Button>
+                    <Button href={PAYMENT_URL}>Отримати доступ</Button>
                 </div>
             </div>
 

@@ -1,5 +1,6 @@
 import { PiCoatHanger } from "react-icons/pi";
 import Button from "../Button/Button.tsx";
+import { PAYMENT_URL } from "../../constants/payment.ts";
 import styles from "./More_that.module.css";
 
 function HangerIcon() {
@@ -59,7 +60,6 @@ function SendIcon() {
 export default function MoreThat() {
     return (
         <section className={`${styles.moreThat} section`} aria-labelledby="more-that-title">
-
             <h2 id="more-that-title" className={styles.title}>
                 Це більше, ніж база контактів
             </h2>
@@ -76,7 +76,9 @@ export default function MoreThat() {
                 ))}
             </div>
 
-            <Button className={styles.button}>Отримати доступ</Button>
+            <Button className={styles.button} href={PAYMENT_URL}>
+                Отримати доступ
+            </Button>
         </section>
     );
 }
