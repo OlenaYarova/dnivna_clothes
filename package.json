@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "-": "^0.0.1-security.1",
     "icons": "^1.0.0",
     "modern-normalize": "^3.0.1",
     "react": "^19.2.7",
