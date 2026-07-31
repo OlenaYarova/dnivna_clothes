@@ -51,8 +51,8 @@ export default function Useful() {
             <div className={styles.copy}>
                 <h2 id="useful-title" className={styles.title}>
                     Якщо ви впізнаєте себе —
-                    <br />
-                    ця база може бути вам корисною
+
+                    <br /> ця база може бути вам корисною
                 </h2>
 
                 <ul className={styles.list}>

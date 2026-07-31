@@ -133,6 +133,7 @@
 }
 
 .title {
+  text-align: center;
   font-size: clamp(2.2rem, 4vw, 3.3rem);
   line-height: 0.96;
 }
